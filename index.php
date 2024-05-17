@@ -33,11 +33,14 @@ $crocchette->description = 'Le crocchette più buone del mondo';
 // var_dump($crocchette);
 
 $pallina = new Game('Pallina', 4.99, $cats);
+$pallina->setColor('Rosso');
+var_dump($pallina);
 // var_dump($pallina);
 
 $luxuryImperialKennel = new Kennel('Cuccia Luxury Imperial', 1100.00, $cats);
 $luxuryImperialKennel->size = 5;
-// var_dump($luxuryImperialKennel);
+$luxuryImperialKennel->setColor('Grigio satinato spaziale');
+var_dump($luxuryImperialKennel);
 // var_dump(get_class($luxuryImperialKennel));
 
 $products = [
